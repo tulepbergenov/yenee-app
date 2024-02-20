@@ -1,9 +1,5 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "VApp",
-});
+<script lang="ts" setup>
+import VThemeToggler from "@/features/VThemeToggler.vue";
 </script>
 
 <template>
@@ -11,8 +7,9 @@ export default defineComponent({
     <section>
       <div class="container">
         <div>
-          <header>
+          <header class="flex items-center justify-between gap-3 py-5">
             <h1>Yenee</h1>
+            <VThemeToggler />
           </header>
         </div>
       </div>
