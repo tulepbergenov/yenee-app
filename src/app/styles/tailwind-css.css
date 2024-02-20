@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  *::selection {
+    @apply bg-app-clr-primary text-white;
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  body::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-app-clr-primary rounded-[4px];
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+}
+
+@layer utilities {
+  .rendering-speed {
+    text-rendering: optimizeSpeed;
+  }
+
+  .scroll-smooth-important {
+    scroll-behavior: smooth !important;
+  }
+}

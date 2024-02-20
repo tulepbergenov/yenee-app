@@ -7,11 +7,15 @@ export default defineComponent({
 </script>
 
 <template>
-  <main>
+  <main class="flex-auto" id="main">
     <section>
-      <header>
-        <h1>Yenee</h1>
-      </header>
+      <div class="container">
+        <div>
+          <header>
+            <h1>Yenee</h1>
+          </header>
+        </div>
+      </div>
     </section>
   </main>
 </template>
