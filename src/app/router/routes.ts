@@ -1,6 +1,6 @@
+import VHomeView from "@/views/VHomeView.vue";
+import VNotFoundView from "@/views/VNotFoundView.vue";
 import { RouteRecordRaw } from "vue-router";
-import VHomeView from "../views/VHomeView.vue";
-import VNotFoundView from "../views/VNotFoundView.vue";
 
 export const routes: RouteRecordRaw[] = [
   {
