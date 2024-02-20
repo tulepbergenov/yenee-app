@@ -1,18 +1,25 @@
 <script lang="ts" setup>
-import VThemeToggler from "@/features/VThemeToggler.vue";
+import VAppLayout from "./layouts/VAppLayout.vue";
 </script>
 
 <template>
-  <main class="flex-auto" id="main">
-    <section>
-      <div class="container">
-        <div>
-          <header class="flex items-center justify-between gap-3 py-5">
-            <h1>Yenee</h1>
-            <VThemeToggler />
-          </header>
-        </div>
-      </div>
-    </section>
-  </main>
+  <VAppLayout>
+    <RouterView v-slot="{ Component, route }">
+      <Transition mode="out-in" name="wrapper" appear>
+        <component :is="Component" :key="route.path" />
+      </Transition>
+    </RouterView>
+  </VAppLayout>
 </template>
+
+<style scoped>
+.wrapper-enter-active,
+.wrapper-leave-active {
+  transition: all 0.2s ease 0s;
+}
+
+.wrapper-enter-from,
+.wrapper-leave-to {
+  opacity: 0;
+}
+</style>

@@ -17,7 +17,7 @@ const onToggleDark = useToggle(isDark);
     :aria-label="isDark ? 'Switch to light theme' : 'Switch to dark theme'"
     :title="isDark ? 'Switch to light theme' : 'Switch to dark theme'"
     @click="onToggleDark()"
-    class="relative flex h-6 w-6 items-center justify-center"
+    class="relative flex h-6 w-6 items-center justify-center transition-colors duration-300 ease-in-out active:text-app-clr-primary md:hover:text-app-clr-primary"
     type="button"
   >
     <Transition name="sun">

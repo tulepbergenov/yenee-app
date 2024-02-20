@@ -12,7 +12,8 @@
     "@fontsource/inter": "^5.0.16",
     "@heroicons/vue": "^2.1.1",
     "@vueuse/core": "^10.8.0",
-    "vue": "^3.4.15"
+    "vue": "^3.4.15",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
