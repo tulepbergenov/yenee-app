@@ -14,7 +14,6 @@ import VThemeToggler from "@/features/VThemeToggler.vue";
             to="/"
             >ᓚᘏᗢ
           </RouterLink>
-          <RouterLink to="/about"> Not Found </RouterLink>
         </div>
         <VThemeToggler />
       </div>
