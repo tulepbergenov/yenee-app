@@ -23,7 +23,9 @@
     /* Alias */
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+
+    "types": ["@intlify/unplugin-vue-i18n/messages"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -6,12 +6,14 @@ useAppTitle();
 </script>
 
 <template>
-  <section class="sr-only">
-    <div class="container">
-      <header>
-        <h1>Yenne: Monitoring Cryptocurrency Changes</h1>
-      </header>
-    </div>
-  </section>
-  <VAddTickerForm />
+  <div>
+    <section class="sr-only">
+      <div class="container">
+        <header>
+          <h1>Yenne: Monitoring Cryptocurrency Changes</h1>
+        </header>
+      </div>
+    </section>
+    <VAddTickerForm />
+  </div>
 </template>

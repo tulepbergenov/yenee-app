@@ -14,6 +14,7 @@ import VThemeToggler from "@/features/VThemeToggler.vue";
             to="/"
             >ᓚᘏᗢ
           </RouterLink>
+          <RouterLink to="/about">{{ $t("about") }}</RouterLink>
         </div>
         <VThemeToggler />
       </div>
