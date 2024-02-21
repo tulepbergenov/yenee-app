@@ -23,13 +23,13 @@ const onToggleDark = useToggle(isDark);
     <Transition name="sun">
       <SunIcon
         class="absolute left-2/4 top-2/4 h-full w-full -translate-x-2/4 -translate-y-2/4"
-        v-if="!isDark"
+        v-if="isDark"
       />
     </Transition>
     <Transition name="moon">
       <MoonIcon
         class="absolute left-2/4 top-2/4 h-full w-full -translate-x-2/4 -translate-y-2/4"
-        v-if="isDark"
+        v-if="!isDark"
       />
     </Transition>
   </button>

@@ -1,15 +1,17 @@
 <script lang="ts" setup>
 import { useAppTitle } from "@/shared/hooks";
+import VAddTickerForm from "@/widgets/VAddTickerForm.vue";
 
 useAppTitle();
 </script>
 
 <template>
-  <section>
+  <section class="sr-only">
     <div class="container">
-      <header class="px-5">
-        <h1>Home</h1>
+      <header>
+        <h1>Yenne: Monitoring Cryptocurrency Changes</h1>
       </header>
     </div>
   </section>
+  <VAddTickerForm />
 </template>
